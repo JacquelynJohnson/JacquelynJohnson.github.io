@@ -1,0 +1,101 @@
+﻿body, html {
+    font-family: verdana, helvetica, sans-serif;
+    padding: 5px;
+    margin: 0;
+    background-color: #555654;
+}
+
+a.nodec {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+li em {
+    font-weight: bold;
+    color: #000;
+    text-align:center;
+    list-style-type: none;
+}
+
+h1, em {
+    color: #000;
+}
+
+h2, em {
+    color: #000;
+}
+[data-tab-content]{
+    display:none;
+}
+
+.active[data-tab-content]{
+    display:block;
+}
+
+/*applies to tabs*/ 
+.tabs{
+    display:flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid gray;
+    text-align:center;
+    font-size: 30px;
+}
+.tab{
+    cursor: pointer;
+    padding:10px;
+
+}
+
+.tab:hover {
+        background: #aaabaa;
+        text-decoration: underline;
+    }
+
+.tab.active {
+        background: #6A6B69;
+        color: #000;
+    }
+
+.tab-content{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+/*applies to links*/
+a{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+li{
+    list-style-type: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#menu-outer {
+    height: auto;
+    /*background: url(images/bar-bg.jpg) repeat-x;*/
+}
+
+.table {
+    display: table; /* Allow the centering to work */
+    margin: 0 auto;
+}
+
+ul#horizontal-list {
+    min-width: 696px;
+    list-style: none;
+    padding-top: 20px;
+}
+
+    ul#horizontal-list li {
+        display: inline;
+    }
+#menu {
+    height: auto;
+}
