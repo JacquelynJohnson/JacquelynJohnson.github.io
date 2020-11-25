@@ -6,10 +6,43 @@
     <link href="style.css" rel="stylesheet" />
     <script src="script.js" defer></script>
     <title>Andrew Samuel</title>
-    <a style="font-size: 15px;" href="https://github.com/dr3w-sam">GitHub</a>
-    <a style="font-size: 15px;" href="https://www.linkedin.com/in/andrew-s-362197120">LinkedIN</a>
+
 </head>
 <body>
-    <p>I am a student at University of Houston-Downtown pursuing a Bachelors degree in Computer Science. I have experience and familiarity with Python, Java, C++, HTML, CSS, and JavaScript. I am interested in the world of databases and Data Science. Some hobbies include playing and watching sports (mostly basketball and football), listening to music, spending time with close friends and family, and watching tv shows and movies. I hope this site makes your Computer Science path a lil easier and a bit more enjoyable!</p>
+    <header>
+        <center>
+            <h1>Andrew Samuel</h1>
+            <p>
+                <a style="font-size: 15px;" href="https://github.com/dr3w-sam">GitHub</a> |
+                <a style="font-size: 15px;" href="https://www.linkedin.com/in/andrew-s-362197120">LinkedIN</a>
+            </p>
+        </center>
+    </header>
+
+    <ul class="tabs">
+        <li data-tab-target="#about" class="active tab">Background</li>
+        <li data-tab-target="#resume" class="tab">Resume</li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="about" data-tab-content class="active">
+            <h2>A little about me</h2>
+            <p>Initially starting my college career as a Chemical Engineering major, I found myself taking intensive science courses and dreading the 45 minute to an hour long drive to school for other reasons other than traffic. After about a semester and a half I was convinced that Chemical Engineering was not the path that I would be taking and chose to research alternatives. With that, I remembered how I used to thoroughly enjoyed Web Design and even looking/helping my friends with their Computer Science homework in high school. Thus, I began my path towards pursuing a Bachelor’s degree in Computer Science. Now here I am, 4 years in with experience and familiarity with Python, Java, C++, SQL, HTML, CSS, and JavaScript. Through my Computed Science college career I grew to be interested in the world of databases and Data Science.</p>
+            <p>Some hobbies of mine include playing basketball and football, being a tortured fan of the Houston Rockets and Houston Texans, listening to music, spending time with close friends and family, and watching tv shows and movies of many genres. I hope this site makes your Computer Science path a lil easier and a bit more enjoyable! Enjoy the selection of memes below that I feel map out my journey into the world of programming.</p>
+            <div id="menu-outer">
+                <div class="table">
+                    <ul id="horizontal-list">
+                        <li><img src="meme01.jpeg" alt="jacque_img" width="300" height="300" /></li>
+                        <li><img src="meme02.jpeg" width="300" height="300" /></li>
+                        <li><img src="meme03.jpeg" width="300" height="300" /></li>                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="resume" data-tab-content>
+            <h2>Resume</h2>
+            <center><embed src="Resume_Drew.pdf" type="application/pdf" width="750px" height="1000px" /></center>
+        </div>
+    </div>
 </body>
 </html>
