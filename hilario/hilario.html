@@ -1,15 +1,135 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <link href="../style.css" rel="stylesheet" />
-    <script src="../script.js" defer></script>
-    <title>Andrew Samuel</title>
-</head>
-<body>
-    <p>hilario, add whatever you want to to this page.</p>
-    <p>make sure to include links to your personal stuff (i.e. linkedin, github, fb)...</p>
+<html>
+	<head>
+        <meta charset = "utf-8">
+        <title>Hilario the Web</title>
+        <style type = "text/css">
+        #cf {
+           position:relative;
+           margin:0 auto;
+           width:0;
+           height:0;
+           display: flex;
+            align-items: center;
+            justify-content: center;
+           }
 
-</body>
+         #cf img {
+         animation-name: cf3FadeInOut;
+         animation-timing-function: ease-in-out;
+      /* if you only want to cycle a finite amount of times, 
+         simply change 'infinite' with # of iterations you need */
+         animation-iteration-count: infinite; 
+         animation-duration: 6s;
+         animation-direction: alternate; /* not strictly necessary */
+         position:absolute;
+            }
+
+            #cf img:nth-of-type(1) {
+               animation-delay: 5s;
+            }
+
+            #cf img:nth-of-type(2) {
+               animation-delay: 3s;
+            }
+
+            #cf img:nth-of-type(3) {
+               /* add some delay for the first picture as well */
+               animation-delay: 1s;
+            }
+
+         @keyframes cf3FadeInOut {
+            /* distributing times evenly */
+            0% {
+               opacity: 1;
+            }
+            25% {
+               opacity: 0;
+            }
+            75% {
+               opacity: 0;
+            }
+            100% {
+               opacity: 1;
+            }
+         }
+        body
+        {
+            color:azure;
+            background-color:#00c774;
+            font-size:14pt;
+            background-image: url("University_of_Houston-Downtown_Logo.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size:auto;
+        }
+        p
+        {
+            color:black;
+            background-color:#98FB98;
+            text-align: center;
+            display: block;
+            padding-top: 20px;
+            padding-left: 22%;
+            padding-right: 22%;
+            padding-bottom: 20px;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size:16pt;
+        }
+        div {
+         width: 300px;
+         font-size:18pt;
+         background-color:#98FB98;
+         border: 15px solid green;
+         padding: 50px;
+         margin: 20px;
+         }
+        </style>
+	</head>
+	<body>
+		<h1 style= "text-shadow: 2px 2px teal;"><center> Hilario's Web Page!</center></h1>
+      <p><b>Introduction</b>
+		<br>Hello, my name is Hilario Lawrence. I am a CS major and I am taking classes 
+		at the University of Houston - Downtown. I have too many hobbies to list but I like 
+		gaming and running in particular. I spend most of my leisure time doing one of these
+		two activities. I also have an unhealthy obsession with pizza and coffee. So much so that I
+		have in the past worked for a pizza chain and then later a Starbucks. I still love both
+		of these things. Probably more so now.
+		<br>While I am a computer science major, I probably had more enjoyment from my mathematics courses. The problem
+		solving aspect is kinda like playing through a stage in a  video game over and over gain until you finally 
+		advance to the next level. This wasn't always the case. Math was pretty tough for me for a long time before it
+		 had any semblence of being enjoyable.
+		<br>As I continue to pursue my degree I can say I have learned a lot from my time in the University. Yet, 
+		there is so much more to learn. The nature of this career path is ever changing and I find that to
+		be something that is very exciting. In my last semester I hope to continue to learn all there is to know
+		about my subjects, or at least all that can possbily fit, I also hope to find a job in the tech field 
+        that will allow me to continue to advance my skills as a computer science major.
+        </p>
+
+      <div>
+         <a href = "https://houston.eater.com/maps/houston-best-coffee-shops">Places that serve coffee in Houston &#x2615</a>
+		   <h3> My favorite things in no particular order </h3>
+		   <ul>
+            <li>Friends</li>
+            <li>Games</li>
+            <li>Coffee</li>
+            <li>Pizza</li>    
+         </ul>
+         <div id="cf">
+            <img class="bottom" src="game_emoji.png" alt = "Gamz"/>
+            <img class="top" src="pizza_emoji.png" alt = "ZZa" />
+            <img class="bottom" src = "coffee_emoji.png" alt = "Covfefe" />
+         </div>
+      </div>
+      <div>
+         <img src = "Hilariopicture.jpg" alt= "Hilario in picture" width = 230 height = 270>
+         <h4>Contat Info</h4>
+         <ul>
+            <li><a href = "mailto: hplawr84@gmail.com">hplawr84@gmail.com</a></li>
+            <li><a href = "https://www.linkedin.com/in/hilariolawrence">linkedin.com/in/hilariolawrence/</a></li>
+         </ul>
+      </div>
+
+	</body>
 </html>
