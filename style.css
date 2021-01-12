@@ -2,22 +2,11 @@
     font-family: verdana, helvetica, sans-serif;
     padding: 5px;
     margin: 0;
-    background-color: #555654;
+    background-color: beige;
 }
-
-a.nodec {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-li em {
-    font-weight: bold;
-    color: #000;
-    text-align:center;
-    list-style-type: none;
+#container{
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1, em {
@@ -27,79 +16,77 @@ h1, em {
 h2, em {
     color: #000;
 }
-[data-tab-content]{
-    display:none;
-}
-
-.active[data-tab-content]{
-    display:block;
-}
-
-/*applies to tabs*/ 
-.tabs{
-    display:flex;
-    justify-content: space-around;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    border-bottom: 1px solid gray;
-    text-align:center;
-    font-size: 30px;
-}
-.tab{
-    cursor: pointer;
-    padding:10px;
-
-}
-
-.tab:hover {
-        background: #aaabaa;
-        text-decoration: underline;
-    }
-
-.tab.active {
-        background: #6A6B69;
-        color: #000;
-    }
-
-.tab-content{
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
 /*applies to links*/
 a{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: black;
 }
+/* a:hover {
+    color: darkslategrey;
+    text-decoration: underline;
+    text-emphasis:initial;
+}
+a:visited{
+    text-emphasis: unset;
+} */
 
 li{
     list-style-type: none;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-#menu-outer {
-    height: auto;
-    /*background: url(images/bar-bg.jpg) repeat-x;*/
-}
-
-.table {
-    display: table; /* Allow the centering to work */
-    margin: 0 auto;
-}
-
-ul#horizontal-list {
-    min-width: 696px;
-    list-style: none;
-    padding-top: 20px;
-}
-
-    ul#horizontal-list li {
-        display: inline;
-    }
-#menu {
-    height: auto;
-}
-
 p{
-    color: lightgrey;
+    color: black;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: bisque;
+    color: #000;
+}
+
+#footer_table{
+    padding: 10px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: bisque;
+    color: #000;
+}
+
+#resume_bod{
+    align-items: center;
+}
+
+.nav {
+    background-color: bisque;
+    list-style-type: none;
+    justify-content: flex-start;
+    height: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 5px;
+}
+
+.nav a {
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    color: black;
+}
+
+.nav li{
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: fit-content;
+}
+.nav li:hover{
+    background-color: blanchedalmond;
 }
