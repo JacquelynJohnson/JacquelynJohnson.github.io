@@ -64,6 +64,7 @@ header{
     padding: 5px;
     background-color: bisque;
     color: #000;
+    margin-bottom: 0px;
 }
 
 #resume_bod{
@@ -78,6 +79,10 @@ header{
     padding-left: 0px;
     padding-right: 0px;
     padding-top: 5px;
+    margin-top: 0%;
+    border-style: solid;
+    border-color: antiquewhite;
+    border-width: 1px;
 }
 
 .nav a {
@@ -107,4 +112,19 @@ header{
     height: 400px;
     float: left;
     margin-bottom: 25px;
+}
+
+.projects{
+    border: solid black 1px;
+    border-radius: 5px;
+    float: left;
+}
+
+.projects td{
+    padding-left: 15px;
+    max-width: 150px;
+}
+
+.projects thead td{
+    border-bottom: solid black 1px;
 }
